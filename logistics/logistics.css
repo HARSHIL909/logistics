@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   height: 100%;
+   font-family: Arial, sans-serif;
+}
+
+nav {
+   padding: (20px 20px 20px 20px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: #333;
+   color: #fff;
+   font-size: 1.1rem;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+}
+
+.nav-links li {
+   position: relative;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+
+}
+
+.background-container {
+   position: relative;
+   height: calc(50% - 0px); /* Adjusting for nav height */
+   width: 100%;
+   overflow: hidden;
+}
+
+.background-slide {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; /* Cover half the screen */
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+}
+
+.background-slide.show {
+   opacity: 1;
+}
+
+.fixed-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-size: 3em;
+   text-align: center;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Add your background images here */
+.background-slide:nth-child(1) {
+   background-image: url('WEB_66.jpg');
+}
+
+.background-slide:nth-child(2) {
+   background-image: url('photo6.jpg');
+}
+
+.background-slide:nth-child(3) {
+   background-image: url('photo71.jpg');
+}
+
+.background-slide:nth-child(4) {
+   background-image: url('photo4.jpg');
+}
+
+.background-slide:nth-child(5) {
+   background-image: url('image5.jpg');
+}
+.container1{
+   font-family: "Open Sans", sans-serif;
+   color: #212529;
+   padding: 40px;
+   text-align: center;
+}
