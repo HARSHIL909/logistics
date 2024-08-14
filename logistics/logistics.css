@@ -9,12 +9,12 @@ body, html {
    font-family: Arial, sans-serif;
 }
 
+/* Navbar Styles */
 nav {
-   padding: (20px 20px 20px 20px);
+   padding: 20px 40px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 20px 40px;
    background: #333;
    color: #fff;
    font-size: 1.1rem;
@@ -26,10 +26,6 @@ nav {
    gap: 20px;
 }
 
-.nav-links li {
-   position: relative;
-}
-
 .nav-links a {
    text-decoration: none;
    color: #fff;
@@ -37,13 +33,13 @@ nav {
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
-
+   text-decoration: underline;
 }
 
+/* Background Slideshow */
 .background-container {
    position: relative;
-   height: calc(50% - 0px); /* Adjusting for nav height */
+   height: calc(50% - 0px);
    width: 100%;
    overflow: hidden;
 }
@@ -52,7 +48,7 @@ nav {
    position: absolute;
    top: 0;
    left: 0;
-   width: 100%; /* Cover half the screen */
+   width: 100%;
    height: 100%;
    background-size: cover;
    background-position: center;
@@ -64,40 +60,62 @@ nav {
    opacity: 1;
 }
 
-.fixed-text {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: white;
-   font-size: 3em;
+.container1 {
+   font-family: sans-serif;
+   color: #50555a;
+   padding: 40px;
    text-align: center;
-   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Add your background images here */
+/* Modal Styles */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 30%;
+   text-align: center;
+}
+
+.close-btn {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* Background Images */
 .background-slide:nth-child(1) {
-   background-image: url('WEB_66.jpg');
-}
-
+   background-image: url('photo8.jpg');
+}  
 .background-slide:nth-child(2) {
    background-image: url('photo6.jpg');
 }
-
 .background-slide:nth-child(3) {
    background-image: url('photo71.jpg');
 }
-
 .background-slide:nth-child(4) {
-   background-image: url('photo4.jpg');
+   background-image: url('WEB_66.jpg');
 }
-
 .background-slide:nth-child(5) {
-   background-image: url('image5.jpg');
-}
-.container1{
-   font-family: "Open Sans", sans-serif;
-   color: #212529;
-   padding: 40px;
-   text-align: center;
+   background-image: url('photo9.jpg');
 }
