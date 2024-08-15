@@ -1,6 +1,0 @@
-logistics requirements:
-
-first page for informantion about company 
-three way services: airways, rodways, seaways
-all roots describe via map:
-destination to destination require time and charge calculator , and payment gateways
